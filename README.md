@@ -1,4 +1,5 @@
 # My FastAPI Tutorial
+- use REST Client to test API endpoints `rest_client.http`
 
 ## Sources
 - [FastAPI Official Documentation](https://fastapi.tiangolo.com/)
@@ -9,3 +10,4 @@
 ## What is this?
 <!-- cSpell:words fastapi -->
 - `fastapi-cloud-cli`
+- OpenAPI schema
