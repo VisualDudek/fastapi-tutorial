@@ -1,3 +1,4 @@
+<!-- cSpell:words anki Starlette Pydantic -->
 # My FastAPI Tutorial
 - use REST Client to test API endpoints `rest_client.http`
 
