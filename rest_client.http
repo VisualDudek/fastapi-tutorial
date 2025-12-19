@@ -8,3 +8,25 @@ GET http://localhost:8000/items_no_conversion/44
 
 ### Data Validation
 GET http://localhost:8000/items/foo
+
+### --- Query Parameters ---
+GET http://localhost:8000/items/?skip=0&limit=5
+
+### Optional Query Parameters
+GET http://localhost:8000/items_optional/foo?q=somequery
+
+### Missing Optional Query Parameters, default values
+GET http://localhost:8000/items_optional/foo
+
+### bool Query Parameters
+GET http://localhost:8000/items_bool/foo?short=true&q=somequery
+
+###
+GET http://localhost:8000/items_bool/foo?short=on
+
+### Missing required Query Parameters
+GET http://localhost:8000/items_required/foo
+
+
+### Missing enum Query Parameters, check docs
+GET http://localhost:8000/models/1
