@@ -2,7 +2,7 @@
 default:
     @just --list
 
-# Reflex init
+# Run fastapi app main.py in dev mode
 [no-cd]
-run:
+dev:
     uv run fastapi dev main.py
