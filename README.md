@@ -29,6 +29,9 @@
 
 ### Query Parameters
 - query parameters are not declared in the path string, but as function parameters with default values
+- TAKEAWAY: handle response as dict and update accordingly to query parameters
+<!-- cSpell:disable-next-line -->
+- QQQ: pojawia się pytanie skoro "type annotation" argumentów funkcji jest odzwierciedlone w dokumentcji OpenAPI to czy można w ten sam sposób okrślich "Schema" dla return type funkcji endpointu? -> TAK można użyć `response_model`
 
 ## What is this?
 <!-- cSpell:words fastapi -->
