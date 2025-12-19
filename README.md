@@ -14,6 +14,9 @@
 - app is a FastAPI instance that subclasses from Starlette (!!!)
 - the way `typing.Annotated` is used (!!!)
 
+### Path Parameters
+
+
 ## What is this?
 <!-- cSpell:words fastapi -->
 - `fastapi-cloud-cli`
