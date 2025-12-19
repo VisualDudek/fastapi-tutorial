@@ -7,6 +7,9 @@
 - [how to learn FastAPI @ChatGPT](./docs/how_to_learn_FASTAPI_CHATGPT.md)
 - [how to learn FastAPI @Gemini](./docs/how_to_learn_FASTAPI_GEMINI.md)
 
+## ANKI files
+- [anki dir](./anki/)
+
 ## Recap
 
 ### First Step
@@ -15,7 +18,17 @@
 - the way `typing.Annotated` is used (!!!)
 
 ### Path Parameters
+- you can declare path parameters/variables in the path string by using curly braces: `/items/{item_id}`
+- path parameter will be passed as function arguments -> *if argument has a different name than the parameter in the path string it will be treated as a query parameter* check next section.
+- when you annotate path parameters with types, FastAPI will perform data validation and conversion automatically (!!!) this is super useful mind that validation + conversion.
+    - can use `Enum` calls for limiting possible values -> will also be reflected in OpenAPI schema + docs (!!!)
+- based on the type annotation, FastAPI will generate OpenAPI schema automatically + docs (!!!)
+- under the hood uses Pydantic for data validation and conversion (!!!)
+- order of path registration matters, evaluated in order of declaration
+- path parameters containing paths (???) what is the use case?
 
+### Query Parameters
+- query parameters are not declared in the path string, but as function parameters with default values
 
 ## What is this?
 <!-- cSpell:words fastapi -->
