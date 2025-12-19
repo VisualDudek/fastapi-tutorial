@@ -1,1 +1,10 @@
 GET http://localhost:8000/
+
+###
+GET http://localhost:8000/items/44
+
+###
+GET http://localhost:8000/items_no_conversion/44
+
+### Data Validation
+GET http://localhost:8000/items/foo
